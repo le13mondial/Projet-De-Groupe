@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #444;
+}
+.container-fluid{
+    width: 100%;
+    height: 300px;
+    background: rgb(10, 95, 10);
+    color: #fff;
+    font-family:sans-serif;
+    justify-content: center;
+    padding-top: 100px;
+}
+.container-fluid .row p{
+   opacity: .7;
+}
+
+.card{
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    background: transparent;
+}
