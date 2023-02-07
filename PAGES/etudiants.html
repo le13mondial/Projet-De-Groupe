@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/etudiant.css">
+    <title>Document</title>
+</head>
+<body>
+
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler iicon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body coll-2">
+              <div class="container">
+                    <img  src="/image/user.png" alt="" height="60px"> <span><a href="#">Administrateur</a></span>
+                    <hr>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">Etudiants</a>
+                        <a class="nav-link" href="../PAGES/etudiants/temps.html">Emploi De temps</a>
+                        <a class="nav-link" href="#">Scolarite</a>
+                        <a class="nav-link" href="#">Notes</a>  
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="containter-fluid">
+        <div class="row ">
+            <div class="col-lg-2 col-md-4 coll-1 ">
+                <img  src="/image/user.png" alt=""> <span><a href="#">Administrateur</a></span>
+                <hr>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Etudiants</a>
+                    <a class="nav-link" href="../PAGES/etudiants/temps.html">Emploi De temps</a>
+                    <a class="nav-link" href="#">Scolarite</a>
+                    <a class="nav-link" href="etudiants/note.html">Notes</a>  
+                    <a class="nav-link active" href="#">Dashboard</a>
+                </nav>
+            </div>
+
+            <div class="col-md-10">
+               <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- MODAL -->
+                                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-plus"></i> Ajouter un Etudiant
+                    </button>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter un Etudiant</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                
+                                    <div class="modal-body">
+                                    <form action=""></form>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">NOM:</label>
+                                            <input type="nom" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+            
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">PRENOM:</label>
+                                            <input type="nom" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Date de naissance:</label>
+                                            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+            
+                                        <span>DIPLOME D'ENTREE</span>
+                                        <select class="form-select" aria-label=".form-select-lg example">
+                                            <option selected>Baccalauréat</option>
+                                            <option value="1">Master I</option>
+                                            <option value="2">Master II</option>
+                                            <option value="3">Doctorat</option>
+                                        </select><br>
+                                        
+                                        <span>FILIERE CHOISIE</span>
+                                        <select class="form-select" aria-label=".form-select-lg example">
+                                            <option selected>Developpement d'application web et mobile</option>
+                                            <option value="1">Infographie</option>
+                                            <option value="2">Marketing digitale</option>
+                                            <option value="3">Montage Vidéo</option>
+                                            <option value="4">Motion design</option>
+                                        </select><br>
+            
+                                        PERIODE:
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Jour
+                                            </label>
+                                        </div>
+            
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Soir
+                                            </label>
+                                        </div><br>
+            
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">TEL</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+237">
+                                        </div>
+            
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">EMAIL:</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+            
+                                        SEXE:
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="xampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                HOMME
+                                            </label>
+                                        </div>
+            
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="xampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                FEMME
+                                            </label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                                        </div>
+                                    </form> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="row">
+                            <h1>LISTE DES ETUDIANTS</h1>
+                            <h2>Categories</h2>
+
+                            <div class="dropdown mt-3">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtre
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Tous</a></li>
+                                <li><a class="dropdown-item" href="#">inscription Acceptee</a></li>
+                                <li><a class="dropdown-item" href="#">Suspendu</a></li>
+                                <li><a class="dropdown-item" href="#">Radier</a></li>
+                              </ul>
+                            </div>
+
+                            <table class="table mt-5">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">photo</th>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Prenom</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">Filliere</th>
+                                    <th scope="col">Gerne</th>
+                                    <th scope="col">Etats</th>
+                                    <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><img src="../image/user.png" alt="" height="60px"></td>
+                                    <td>CHE</td>
+                                    <td>STEPHANE</td>
+                                    <td>19/04/1995</td>
+                                    <td>Developpement <br>web et Application <br> mobile</td>
+                                    <td>M</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td><img src="../image/user.png" alt="" height="60px"></td>
+                                    <td>DIFFO</td>
+                                    <td>BRANDON</td>
+                                    <td>19/04/1995</td>
+                                    <td>Developpement <br>web et Application <br> mobile</td>
+                                    <td>M</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td><img src="../image/download (1).png" alt="" height="60px"></td>
+                                    <td>NJUINE</td>
+                                    <td>ASTRID</td>
+                                    <td>19/04/1995</td>
+                                    <td>Developpement <br>web et Application <br> mobile</td>
+                                    <td>F</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Rejeter</span> <br> <br> <span class="bg-danger text-white fw-bold" style="padding: 4px;">Dossier InComplet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td><img src="../image/download (1).png" alt="" height="60px"></td>
+                                    <td>VAZI</td>
+                                    <td>NTSOLI</td>
+                                    <td>19/04/1995</td>
+                                    <td>Marketing<br> Digital</td>
+                                    <td>F</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td><img src="../image/user.png" alt="" height="60px"></td>
+                                    <td>ARIS</td>
+                                    <td>BRANDON</td>
+                                    <td>19/04/1995</td>
+                                    <td>Marketing <br> Digital</td>
+                                    <td>M</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-danger text-white fw-bold" style="padding: 4px;">Suspendu</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td><img src="../image/download (1).png" alt="" height="60px"></td>
+                                    <td>FAMSSEU</td>
+                                    <td>MERVEILLE</td>
+                                    <td>19/04/1995</td>
+                                    <td>Infographie</td>
+                                    <td>F</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td><img src="../image/download (1).png" alt="" height="60px"></td>
+                                    <td>ECHABE</td>
+                                    <td>FRED</td>
+                                    <td>19/04/1995</td>
+                                    <td>Infographie</td>
+                                    <td>F</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td><img src="../image/download (1).png" alt="" height="60px"></td>
+                                    <td>NJUINE</td>
+                                    <td>ASTRID</td>
+                                    <td>19/04/1995</td>
+                                    <td>Developpement <br>web et Application <br> mobile</td>
+                                    <td>F</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Rejeter</span> <br> <br> <span class="bg-danger text-white fw-bold" style="padding: 4px;">Dossier InComplet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">9</th>
+                                    <td><img src="../image/user.png" alt="" height="60px"></td>
+                                    <td>CHE</td>
+                                    <td>STEPHANE</td>
+                                    <td>19/04/1995</td>
+                                    <td>Developpement <br>web et Application <br> mobile</td>
+                                    <td>M</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-success text-white fw-bold" style="padding: 4px;">Dossier Complet</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+
+                                  <tr>
+                                    <th scope="row">10</th>
+                                    <td><img src="../image/user.png" alt="" height="60px"></td>
+                                    <td>ARIS</td>
+                                    <td>BRANDON</td>
+                                    <td>19/04/1995</td>
+                                    <td>Marketing <br> Digital</td>
+                                    <td>M</td>
+                                    <td><span class="bg-primary text-white fw-bold" style=" padding: 4px;">Inscription Accepter</span> <br> <br> <span class="bg-danger text-white fw-bold" style="padding: 4px;">Suspendu</span></td>
+                                    <td><span style="cursor: pointer;"><i class="fa-solid fa-trash text-danger"></i></span><br> <br> <span style="cursor: pointer;"><i class="fa-solid fa-pen-to-square text-warning"></i></span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="../JS/bootstrap.bundle.js"></script>
+    <script src="../JS/all.min.js"></script>
+</body>
+</html>

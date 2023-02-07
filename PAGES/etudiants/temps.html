@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/all.min.css">
+    <link rel="stylesheet" href="../../CSS/etudiant/temps.css">
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler iicon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body coll-2">
+              <div class="container">
+                    <img  src="/image/user.png" alt="" height="60px"> <span><a href="#">Administrateur</a></span>
+                    <hr>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">Etudiants</a>
+                        <a class="nav-link" href="../PAGES/etudiants/temps.html">Emploi De temps</a>
+                        <a class="nav-link" href="#">Scolarite</a>
+                        <a class="nav-link" href="../etudiants/note.html">Notes</a>  
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        </nav>
+    
+
+
+        <div class="containter-fluid">
+            <div class="row ">
+                <div class="col-lg-2 col-md-4 coll-1 ">
+                    <img  src="/image/user.png" alt=""> <span><a href="#">Administrateur</a></span>
+                    <hr>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="../../PAGES/etudiants.html">Etudiants</a>
+                        <a class="nav-link" href="#">Emploi De temps</a>
+                        <a class="nav-link" href="#">Scolarite</a>
+                        <a class="nav-link" href="../etudiants/note.html">Notes</a>  
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </nav>
+                </div>
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-3 mt-3">
+                                    <!-- MODAL -->
+                                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-plus"></i> Ajouter un Emploi De temps
+                            </button>
+            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Creer un Emploi de Temps</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        
+                                            <div class="modal-body">
+                                            <form>
+
+
+                                            <span>FILIERE CHOISIE</span>
+                                            <select class="form-select" aria-label=".form-select-lg example">
+                                                <option selected>Developpement d'application web et mobile</option>
+                                                <option value="1">Infographie</option>
+                                                <option value="2">Marketing digitale</option>
+                                                <option value="3">Montage Vidéo</option>
+                                                <option value="4">Motion design</option>
+                                            </select><br>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">MODULE:</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="JAVASCRIPT">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <span>SALLE</span>
+                                                <select class="form-select" aria-label=".form-select-lg example">
+                                                    <option selected>Salle Numero 1</option>
+                                                    <option value="1">Salle Numero 2</option>
+                                                    <option value="2">Salle Numero 3 </option>
+                                                </select><br>
+                                            </div>
+
+                                               <div class="CHECK">
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckhecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          LUNDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          MARDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChcked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          MERCREDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCheked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          JEUDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckd" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          VENDREDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          SAMEDI
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                               </div> <BR></BR>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Horaire: <br>LUNDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label"><br>MARDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label"><br>MERCREDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label"><br>JEUDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label"><br>VENDREDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label"><br>SAMEDI</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="8h:00-12h:00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                                                </div>
+                                            </form>
+
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Filtre
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Developpement web et Application Mobile</a></li>
+                                  <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                  <li><a class="dropdown-item" href="#">Infographie</a></li>
+                                  <li><a class="dropdown-item" href="#">Reseau</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="text-center"> EMPLOI DE TEMPS</h2>
+                            <h3 class="text-center">Developpement web et Application Designe</h3>
+                            <table class="table table-warning">
+                                <thead>
+                                  <tr class="table-dark">
+                                    <th scope="col">JOURS</th>
+                                    <th scope="col">HORAIRES</th>
+                                    <th scope="col">MODULE</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Mardi</td>
+                                    <td>8h:00-12h:00</td>
+                                    <td>Javascript</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mercredi</td>
+                                    <td colspan="1">8h:00-12h:00</td>
+                                    <td>Javascript</td>
+                                  </tr>
+    
+                                  <tr>
+                                    <td>Jeudi</td>
+                                    <td>10h:00-14h:00</td>
+                                    <td>Base De Donner</td>
+                                  </tr>
+    
+                                  <tr>
+                                    <td>Vendredi</td>
+                                    <td>12h:00-15h:00</td>
+                                    <td>Javascript</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Samedi</td>
+                                    <td>10h:00-15h:00</td>
+                                    <td>Projet de Groupe</td>
+                                  </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                        <div class="row">
+                           <div class="col-md-4 ms-auto ">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary">Print<i class="fa-solid fa-download"></i></button>
+                                <button type="button" class="btn btn-warning">Modifier<i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger">Effacer<i class="fa-solid fa-trash"></i></button>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    <script src="../../JS/bootstrap.bundle.js"></script>
+    <script src="../../JS/all.min.js"></script>
+</body>
+</html>
